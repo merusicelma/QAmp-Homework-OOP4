@@ -9,19 +9,13 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    public double getRadius() {
-        return radius;
-    }
-
     public void addRadius() {
         System.out.println("Please enter a radius: ");
-        double radius = reader.nextDouble();
-        this.radius = radius;
+        this.radius = reader.nextDouble();
     }
 
     private double perimeterCircle() {
-        double volume = Math.PI * 2 * this.radius;
-        return volume;
+        return Math.PI * 2 * this.radius;
     }
 
     @Override
@@ -33,8 +27,8 @@ public class Circle extends Shape {
     }
 
     private double areaCircle() {
-        double area = Math.PI * this.radius * this.radius;
-        return area;
+        return Math.PI * this.radius * this.radius;
+        
     }
 
     @Override

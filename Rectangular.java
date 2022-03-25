@@ -29,8 +29,7 @@ public class Rectangular extends Shape {
     }
 
     private double perimeterRectangular() {
-        double volume = 2 * (this.length + this.width);
-        return volume;
+        return 2 * (this.length + this.width);
     }
 
     @Override
@@ -43,8 +42,7 @@ public class Rectangular extends Shape {
 
 
     private double areaRectangular() {
-        double are = this.length * this.width;
-        return are;
+        return this.length * this.width;
     }
 
     @Override

@@ -5,10 +5,9 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner reader = new Scanner(System.in);
-
-        Circle myCircle = new Circle(0);
-        Rectangular myRectangular = new Rectangular(0, 0);
-        Triangle myTriangle = new Triangle(0, 0, 0);
+        Circle myCircle = new Circle();
+        Rectangular myRectangular = new Rectangular();
+        Triangle myTriangle = new Triangle();
 
         ArrayList<Shape> shape = new ArrayList<>();
         int answer;
@@ -27,15 +26,15 @@ public class Main {
             switch (answer) {
                 case 1:
                     myCircle.addRadius();
-                    shape.add(new Circle(myCircle.getRadius()));
+                    shape.add(myCircle);
                     break;
                 case 2:
                     myRectangular.addLengthWidth();
-                    shape.add(new Rectangular(myRectangular.getLength(), myRectangular.getWidth()));
+                    shape.add(myRectangular);
                     break;
                 case 3:
                     myTriangle.addSideTriangle();
-                    shape.add(new Triangle(myTriangle.getSideA(), myTriangle.getSideB(), myTriangle.getSideC()));
+                    shape.add(myTriangle);
                     break;
                 default:
                     System.out.println("You choose wrong answer!");

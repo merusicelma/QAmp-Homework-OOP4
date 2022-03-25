@@ -39,8 +39,7 @@ public class Triangle extends Shape {
     }
 
     private double perimeterTriangle() {
-        double volume = this.sideA + this.sideB + this.sideC;
-        return volume;
+        return this.sideA + this.sideB + this.sideC;
     }
 
 
@@ -54,8 +53,7 @@ public class Triangle extends Shape {
 
     private double areaTriangle() {
         double s = perimeterTriangle() / 2;
-        double area = s * (s - this.sideA) * (s - this.sideB) * (s - this.sideC);
-        return area;
+        return s * (s - this.sideA) * (s - this.sideB) * (s - this.sideC);
     }
 
     @Override
